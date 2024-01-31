@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         String question = "Where do you put the code in java?";
-        String choiceOne = "src";
-        String choiceTwo = "lib";
-        String choiceThree = "bin";
+        String optionA = "src";
+        String optionB = "lib";
+        String optionC = "bin";
 
-        String correctAnswer = choiceOne;
+        String correctAnswer = optionA;
 
         System.out.println(question);
 
         System.out.println("Choose one of the following: " +
-                choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".");
+                optionA + ", " + optionB + ", or " + optionC + ".");
 
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +21,7 @@ public class App {
         if (correctAnswer.equals(input.toLowerCase())) {
             System.out.println("Congrats that is the right answer!");
         } else {
-            System.out.println("You are not correct. The correct answer is " + correctAnswer);
+            System.out.println("Aw I am sorry you are not correct. The correct answer is " + correctAnswer);
         }
     }
 }
